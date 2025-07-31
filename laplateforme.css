@@ -1,0 +1,111 @@
+/* ====== STYLE GLOBAL ====== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Fond clair */
+  color: #333;
+}
+
+/* ====== MENU FIXE ====== */
+nav {
+  background-color: #003366; /* Bleu foncé */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0055aa; /* Bleu plus clair au survol */
+  border-radius: 5px;
+}
+
+/* ====== HEADER ====== */
+header {
+  background: linear-gradient(to right, #0055aa, #0099ff);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+/* ====== SECTIONS ====== */
+main section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+main section h2 {
+  color: #0055aa;
+}
+
+main section p {
+  line-height: 1.6;
+}
+
+main section a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #0055aa;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+main section a:hover {
+  background-color: #0099ff;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+}
